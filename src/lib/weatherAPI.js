@@ -1,6 +1,6 @@
 // weatherAPI.js
 
-import { API_KEY } from './config.js';
+const API_KEY = process.env.WEATHER_API_KEY;
 const BASE_URL = "https://api.weatherapi.com/v1/current.json";
 
 export const fetchWeatherData = async (location) => {
